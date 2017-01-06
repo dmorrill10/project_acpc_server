@@ -98,10 +98,10 @@ static enum ActionType charToAction[ 256 ] = {
   a_invalid, a_invalid, a_invalid, a_invalid
 };
 
-static char actionChars[ a_invalid +1 ] = "fcr";
+static char actionChars[ a_invalid + 1 ] = "fcr";
 
-static char suitChars[ MAX_SUITS +1] = "cdhs";
-static char rankChars[ MAX_RANKS +1] = "23456789TJQKA";
+static char suitChars[ MAX_SUITS + 1 ] = "cdhs";
+static char rankChars[ MAX_RANKS + 1 ] = "23456789TJQKA";
 
 
 static int consumeSpaces( const char *string, int consumeEqual )
@@ -1443,6 +1443,7 @@ static int printBoardCards( const Game *game, const State *state,
 
   return c;
 }
+
 
 static int readStateCommon( const char *string, const Game *game,
 			    State *state )
